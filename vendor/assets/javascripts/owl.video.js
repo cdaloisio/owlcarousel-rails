@@ -179,7 +179,7 @@
 		}
 
 		if (video.type === 'youtube') {
-			path = "http://img.youtube.com/vi/" + video.id + "/hqdefault.jpg";
+			path = window.location.protocol + "//img.youtube.com/vi/" + video.id + "/hqdefault.jpg";
 			create(path);
 		} else if (video.type === 'vimeo') {
 			$.ajax({
